@@ -109,3 +109,61 @@ body, header, footer, header-placeholder, footer-placeholder {
   font-family: 'Poppins', sans-serif !important;
 }
 
+/* Default: Full nav on desktop / large screens */
+.nav-toggle {
+  display: none; /* hide hamburger by default */
+}
+
+nav {
+  display: block; /* full menu visible */
+}
+
+/* Mobile / small screens */
+@media (max-width: 768px) {
+  nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+  }
+
+  nav.open {
+    max-height: 500px; /* menu expands */
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .nav-toggle {
+    display: flex; /* show hamburger */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-toggle span {
+    display: block;
+    height: 3px;
+    background-color: var(--purple);
+    border-radius: 2px;
+  }
+
+  .nav-wrap {
+    justify-content: space-between;
+  }
+}
