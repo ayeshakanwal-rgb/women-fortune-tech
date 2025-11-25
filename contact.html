@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women Fortune Tech - Contact</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Global + Page CSS -->
+  <link href="css/global.css" rel="stylesheet">
+  <link href="css/contact.css" rel="stylesheet">
+</head>
+<body>
+  <header-placeholder></header-placeholder>
+
+  <main class="container">
+    <header class="page-title" data-aos="fade-up">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you — reach out with questions or collaboration ideas.</p>
+    </header>
+
+    <section class="contact-section" data-aos="fade-up">
+      <div class="contact-wrapper-vertical">
+        
+        <!-- Contact Info Vertical -->
+        <div class="contact-info-vertical">
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Address</h4>
+            <p>Women Fortune Tech, 2nd Floor, Ali Tower, University Road, Peshawar</p>
+          </div>
+
+          <div class="info-card">
+            <i class="fas fa-envelope"></i>
+            <h4>Email</h4>
+            <p>womenfortune3@gmail.com</p>
+          </div>
+
+          <div class="info-card">
+            <i class="fas fa-phone"></i>
+            <h4>Phone</h4>
+            <p>+92 315-9805714</p>
+          </div>
+
+          <!-- Social Media -->
+          <div class="social-media">
+            <a href="https://www.linkedin.com/company/women-fortune-tech/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/womenfortunetech" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@women.fortune.tec" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61555944514154" target="_blank"><i class="fab fa-facebook"></i></a>
+          </div>
+
+          <!-- Map -->
+          <div class="map">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.123456!2d67.123456!3d24.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33abcdef1234%3A0xabcdef1234567890!2sPeshawar%2C%20Pakistan!5e0!3m2!1sen!2s!4v1699999999999!5m2!1sen!2s" 
+              width="100%" 
+              height="300" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" data-aos="fade-up">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <input type="text" placeholder="Subject">
+          <textarea placeholder="Message" rows="6" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer-placeholder></footer-placeholder>
+
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    AOS.init({ duration: 700, once: true });
+
+    // Simple form submission alert
+    const contactForm = document.querySelector('.contact-form');
+    contactForm.addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thank you! Your message has been sent.');
+      contactForm.reset();
+    });
+  </script>
+</body>
+</html>

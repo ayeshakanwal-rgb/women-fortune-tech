@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Women Fortune Tech </title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link href="css/global.css" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link href="css/home.css" rel="stylesheet">
+</head>
+
+<body>
+
+ <!--navigation bar-->
+  <header-placeholder></header-placeholder>
+
+  <!-- Hero Slideshow -->
+  <section class="hero">
+    <img src="images/background.jpeg" class="slide active" alt="Empowered women learning">
+    <img src="images/backroun2.jpeg" class="slide" alt="Digital training session">
+
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Empowering Women Through Digital Education</h1>
+      <p>Join a growing network of empowered women transforming the digital world.</p>
+      <a href="#about">Explore More</a>
+    </div>
+  </section>
+
+  <!-- About Preview -->
+  <section class="about-preview" id="about" data-aos="fade-up">
+    <div class="about-center">
+      <img src="images/logo.png" alt="Women Fortune Tech Logo">
+      <p>
+        Women Fortune Tech is Pakistan’s premier Vernacular Upskilling platform, empowering women to unlock their potential in the digital world. 🌟
+        We provide access to top-tier skill-building programs in regional languages, helping women overcome barriers to success.
+      </p>
+      <a href="about.html" class="readmore-btn">Read More</a>
+    </div>
+  </section>
+
+  <!-- Founder Section -->
+  <section class="founder" data-aos="fade-up">
+    <img src="images/CEOpic.jpeg" alt="Founder Image">
+    <div class="founder-text">
+      <h2>Hamid Shinwari</h2>
+      <h4>CEO & Founder – Grand Café</h4>
+      <p>
+        The CEO of Women Fortune Tech is a passionate advocate for women’s empowerment and digital inclusion. With a mission to break barriers, she founded Pakistan’s premier Vernacular Upskilling Platform, providing accessible, job-ready training programs in regional languages.
+        Her leadership focuses on equipping women with in-demand digital skills, fostering confidence, economic independence, and global competitiveness.
+      </p>
+      <a href="about.html">Learn More About Our Founder</a>
+    </div>
+  </section>
+
+  <!-- Showcase Video Section -->
+  <section class="showcase" data-aos="fade-up">
+    <h2>Our Journey of Empowerment</h2>
+    <iframe
+      src="https://www.youtube.com/embed/sDtP2vMbIk4"
+      title="Women Fortune Tech Showcase"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta" data-aos="fade-up">
+    <h2>Join Our Empowerment Community</h2>
+    <p>Be part of Pakistan’s largest women-led digital upskilling movement.</p>
+    <a href="#">Subscribe Now</a>
+  </section>
+
+  <!-- Internship Section -->
+  <section class="internship" id="internship" data-aos="fade-up">
+    <h2>Join Our Internship Program</h2>
+
+    <div class="intern-help">
+      <h4>Internship Details</h4>
+      <p>Duration: 8–12 weeks • Certification provided • Mentorship & networking opportunities.</p>
+      <h4 style="margin-top:10px;">Need Help?</h4>
+      <p>Email: <strong>interns@womenfortunetech.com</strong></p>
+    </div>
+
+    <form  action="https://formsubmit.co/kanwalshahid611@gmail.com" method="POST" enctype="multipart/form-data">
+
+    <!-- Redirect to Success Page -->
+    <input type="hidden" name="_next" value="https://yourwebsite.com/success.html">
+
+    <!-- Disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
+
+      <input type="text" placeholder="Full Name" required>
+      <input type="text" placeholder="Father's Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Permanent Address" required>
+      <input type="text" placeholder="Phone Number" required>
+      <select required>
+        <option value=""> Select Field of Interest</option>
+        <option value="Graphic Design">Graphic Design</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Digital Marketing">Digital Marketing</option>
+        <option value="Content Writing">Content Writing</option>
+        <option value="Cybersecurity">Cybersecurity</option>
+        <option value="Data Analysis">Data Analysis</option>
+        <option value="UI/UX Design">UI/UX Design</option>
+        <option value="Video Editing">Video Editing</option>
+        <option value="App Development">App Development</option>
+        <option value="Social Media Management">Social Media Management</option>
+      </select>
+
+      <input type="url" placeholder="LinkedIn Profile URL">
+      <input type="file" accept=".pdf,.doc,.docx">
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+   <footer-placeholder></footer-placeholder>
+
+  <!-- JS: AOS then your script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+    // ensure AOS is initialised (if not already inside script.js)
+    if (typeof AOS !== 'undefined') AOS.init();
+  </script>
+</body>
+</html>
