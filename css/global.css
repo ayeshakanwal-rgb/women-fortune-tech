@@ -159,7 +159,7 @@ nav {
   .nav-toggle span {
     display: block;
     height: 3px;
-    background-color: var(--purple);
+    background-color:  #7b2cbf;
     border-radius: 2px;
   }
 

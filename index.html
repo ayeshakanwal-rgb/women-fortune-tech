@@ -93,20 +93,22 @@
       <p>Email: <strong>interns@womenfortunetech.com</strong></p>
     </div>
 
-    <form  action="https://formsubmit.co/kanwalshahid611@gmail.com" method="POST" enctype="multipart/form-data">
+    <form action="https://formsubmit.co/kanwalshahid611@gmail.com" 
+      method="POST" enctype="multipart/form-data">
 
-    <!-- Redirect to Success Page -->
-    <input type="hidden" name="_next" value="https://yourwebsite.com/success.html">
+    <input type="hidden" name="_next" value="https://ayeshakanwal-rgb.github.io/women-fortune-tech/success.html">
+
 
     <!-- Disable Captcha -->
     <input type="hidden" name="_captcha" value="false">
 
-      <input type="text" placeholder="Full Name" required>
-      <input type="text" placeholder="Father's Name" required>
-      <input type="email" placeholder="Email Address" required>
-      <input type="text" placeholder="Permanent Address" required>
-      <input type="text" placeholder="Phone Number" required>
-      <select required>
+    <input type="text" name="Full Name" placeholder="Full Name" required>
+    <input type="text" name="Father Name" placeholder="Father's Name" required>
+    <input type="email" name="Email" placeholder="Email Address" required>
+    <input type="text" name="Address" placeholder="Permanent Address" required>
+    <input type="text" name="Phone" placeholder="Phone Number" required>
+
+    <select name="Field of Interest" required>
         <option value=""> Select Field of Interest</option>
         <option value="Graphic Design">Graphic Design</option>
         <option value="Web Development">Web Development</option>
@@ -118,12 +120,15 @@
         <option value="Video Editing">Video Editing</option>
         <option value="App Development">App Development</option>
         <option value="Social Media Management">Social Media Management</option>
-      </select>
+    </select>
 
-      <input type="url" placeholder="LinkedIn Profile URL">
-      <input type="file" accept=".pdf,.doc,.docx">
-      <button type="submit">Submit Application</button>
-    </form>
+    <input type="url" name="LinkedIn URL" placeholder="LinkedIn Profile URL">
+    
+    <input type="file" name="Resume" accept=".pdf,.doc,.docx">
+
+    <button type="submit">Submit Application</button>
+</form>
+
   </section>
 
   <!-- Footer -->
