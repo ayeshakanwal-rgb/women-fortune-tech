@@ -39,4 +39,4 @@ A fully responsive and modern website for **Women Fortune Tech**, designed to em
 
 # 📧 Contact
 
-For any queries or suggestions, contact **womenfortune3@gmail.com**.
+For any queries or suggestions, contact **ayeshakanwal03780@gmail.com**.
